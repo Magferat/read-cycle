@@ -4,10 +4,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
+    { name: 'Home', href: '#', current: true },
+    { name: 'Books', href: '#', current: false },
+    { name: 'Review', href: '#', current: false },
+    { name: 'Your Post', href: '#', current: false },
 ]
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -15,7 +15,7 @@ function classNames(...classes) {
 export const Navigation = () => {
     return (
 
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-white-500 decoration-black">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -43,7 +43,7 @@ export const Navigation = () => {
                                         href={item.href}
                                         aria-current={item.current ? 'page' : undefined}
                                         className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                            item.current ? 'bg-gray-900 text-white' : 'text-white-300 hover:bg-gray-700 hover:text-white',
                                             'rounded-md px-3 py-2 text-sm font-medium',
                                         )}
                                     >
